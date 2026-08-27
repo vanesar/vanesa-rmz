@@ -10,7 +10,7 @@ const SITE = {
   name: "Vanesa Ramírez",
   shortName: "Vanesa",
   role: "PhD Candidate in Astronomy",
-  affiliation: ["Leiden Observatory"],
+  affiliation: ["Leiden Observatory", "Leiden University"],
   location: "Leiden, The Netherlands",
   email: "ramirez@strw.leidenuniv.nl",
   phone: "+31 6 47 07 4243",
