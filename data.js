@@ -25,7 +25,7 @@ const HERO = {
     { label: "Focus", value: "Planetary Interiors · Exoplanets" },
     { label: "Currently", value: "PhD @ Leiden Observatory" },
     { label: "Methods", value: "Bayesian · Machine Learning" },
-    { label: "Tools", value: "JWST · Ariel · Juno data" }
+    { label: "Tools", value: "JWST · Ariel · Voyager data" }
   ]
 };
 
@@ -157,7 +157,7 @@ const PUBLICATIONS = [
     authors: "Ramirez, V., Cridland, A. J., Mollière, P.",
     title: "Tracing bulk elemental ratios in exoplanetary atmospheres with TiO chemistry",
     journal: "Astronomy & Astrophysics",
-    link: "",
+    link: "https://www.aanda.org/articles/aa/abs/2020/09/aa38186-20/aa38186-20.html",
     place: "Leiden, The Netherlands",
     lat: 52.155,
     lng: 4.483,
@@ -169,7 +169,7 @@ const PUBLICATIONS = [
     authors: "Wofford, A., Ramirez, V., Lee, J. C., et al.",
     title: "Candidate LBV stars in galaxy NGC 7793 found via HST photometry + MUSE spectroscopy",
     journal: "Monthly Notices of the Royal Astronomical Society",
-    link: "",
+    link: "https://academic.oup.com/mnras/article/493/2/2410/5721530",
     place: "Ensenada, Mexico",
     lat: 31.8666,
     lng: -116.6022,
@@ -181,7 +181,7 @@ const PUBLICATIONS = [
     authors: "Sucerquia, M., Ramirez, V., Alvarado-Montes, J. A., Zuluaga, J. I.",
     title: "Can close-in giant exoplanets retain detectable exomoons?",
     journal: "Monthly Notices of the Royal Astronomical Society",
-    link: "",
+    link: "https://ieeexplore.ieee.org/document/9114127",
     place: "Medellín, Colombia",
     lat: 6.2442,
     lng: -75.5812,
@@ -193,7 +193,7 @@ const PUBLICATIONS = [
     authors: "Sucerquia, M., Alvarado-Montes, J. A., Ramirez, V., Zuluaga, J. I.",
     title: "Anomalous lightcurves of young tilted exorings",
     journal: "Monthly Notices of the Royal Astronomical Society",
-    link: "",
+    link: "https://academic.oup.com/mnrasl/article/472/1/L120/4259571",
     place: "Medellín, Colombia",
     lat: 6.2442,
     lng: -75.5812,
