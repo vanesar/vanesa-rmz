@@ -17,6 +17,8 @@
   --orange: #E8732A;
   --orange-dark: #C45A16;
   --orange-soft: #FBEEE7;
+  --purple: #7B4B94;
+  --purple-soft: #F0E8F4;
   --text: #333333;
   --text-muted: #6B6B6B;
   --line: #E4DCCB;
@@ -462,6 +464,7 @@ img { max-width: 100%; display: block; }
 .map-filter.active[data-cat="all"] { background: var(--navy); border-color: var(--navy); }
 .map-filter.active.filter-degree { background: var(--teal); border-color: var(--teal); }
 .map-filter.active.filter-school { background: var(--orange); border-color: var(--orange); }
+.map-filter.active.filter-work { background: var(--purple); border-color: var(--purple); }
 .map-filter.active.filter-conf { background: var(--navy); border-color: var(--navy); }
 .map-filter.active.filter-pub { background: var(--teal-dark); border-color: var(--teal-dark); }
 
@@ -515,6 +518,7 @@ img { max-width: 100%; display: block; }
   border-color: var(--teal);
 }
 .map-card.m-school.selected { background: var(--orange-soft); border-color: var(--orange); }
+.map-card.m-work.selected { background: var(--purple-soft); border-color: var(--purple); }
 .map-card.m-conf.selected { background: var(--cream-2); border-color: var(--navy); }
 .map-card.m-pub.selected { background: var(--teal-soft); border-color: var(--teal-dark); }
 
@@ -550,6 +554,7 @@ img { max-width: 100%; display: block; }
 }
 .pop-badge.b-degree { background: var(--teal); }
 .pop-badge.b-school { background: var(--orange); }
+.pop-badge.b-work { background: var(--purple); }
 .pop-badge.b-conf { background: var(--navy); }
 .pop-badge.b-pub { background: var(--teal-dark); }
 
@@ -564,6 +569,7 @@ img { max-width: 100%; display: block; }
 .pin::after { content: attr(data-ico); transform: rotate(45deg); font-size: 14px; }
 .pin.p-degree { background: var(--teal); }
 .pin.p-school { background: var(--orange); }
+.pin.p-work { background: var(--purple); }
 .pin.p-conf { background: var(--navy); }
 .pin.p-pub { background: var(--teal-dark); }
 

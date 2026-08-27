@@ -198,6 +198,7 @@ var map, markerGroup;
 var CATEGORY = {
   degree: { label: "Studies (BSc / MSc / PhD)", css: "p-degree",  badge: "b-degree",  color: "#2E7D74" },
   school: { label: "Schools & stays",           css: "p-school", badge: "b-school", color: "#E8732A" },
+  work:   { label: "Industry Work Experience",  css: "p-work",   badge: "b-work",   color: "#7B4B94" },
   conf:   { label: "Conferences",               css: "p-conf",   badge: "b-conf",   color: "#1B3565" },
   pub:    { label: "Publications",              css: "p-pub",    badge: "b-pub",    color: "#1F5A54" }
 };
@@ -209,19 +210,9 @@ function buildMapData() {
 
   STUDIES.forEach(function (s) {
     if (s.lat == null) return;
+    var cat = s.type === "degree" ? "degree" : s.type === "work" ? "work" : "school";
     push({
-      cat: "degree",
-      title: s.title,
-      place: s.institution + (s.place ? " · " + s.place : ""),
-      years: s.years,
-      note: s.note,
-      lat: s.lat, lng: s.lng
-    });
-  });
-  STUDIES.forEach(function (s) {
-    if (s.lat == null || s.type === "degree") return;
-    push({
-      cat: "school",
+      cat: cat,
       title: s.title,
       place: s.institution + (s.place ? " · " + s.place : ""),
       years: s.years,
@@ -256,7 +247,7 @@ function buildMapData() {
 }
 
 function pinIcon(cat) {
-  const ic = { degree: "🎓", school: "🌏", conf: "🎤", pub: "📄" }[cat] || "📍";
+  const ic = { degree: "🎓", school: "🌏", work: "💼", conf: "🎤", pub: "📄" }[cat] || "📍";
   return L.divIcon({
     className: "",
     html: '<div class="pin ' + CATEGORY[cat].css + '" data-ico="' + ic + '"></div>',
@@ -320,7 +311,7 @@ function setupMap() {
       const li = document.createElement("li");
       li.className = "map-card m-" + item.cat;
       li.innerHTML =
-        '<span class="mc-ico">' + ({ degree: "🎓", school: "🌏", conf: "🎤", pub: "📄" }[item.cat] || "📍") + "</span>" +
+        '<span class="mc-ico">' + ({ degree: "🎓", school: "🌏", work: "💼", conf: "🎤", pub: "📄" }[item.cat] || "📍") + "</span>" +
         '<div class="mc-body"><div class="mc-title">' + esc(item.title) + "</div>" +
         '<div class="mc-place">' + esc(item.place) + "</div>" +
         '<span class="mc-years">' + esc(item.years) + "</span></div>";

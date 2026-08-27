@@ -95,7 +95,7 @@ const STUDIES = [
   },
   {
     id: "asml",
-    type: "school",
+    type: "work",
     title: "Data Scientist",
     institution: "ASML",
     place: "Eindhoven, The Netherlands",
@@ -104,7 +104,7 @@ const STUDIES = [
     lng: 5.4697,
     years: "2022–2024",
     note: "Developed new data-driven strategies and solutions for ASML's optical lithography instruments.",
-    tag: "Work experience"
+    tag: "Industry Work Experience"
   }
 ];
 
