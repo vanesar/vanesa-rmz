@@ -95,7 +95,7 @@ const STUDIES = [
   },
   {
     id: "asml",
-    type: "school",
+    type: "experience",
     title: "Data Scientist",
     institution: "ASML",
     place: "Eindhoven, The Netherlands",
@@ -104,7 +104,7 @@ const STUDIES = [
     lng: 5.4697,
     years: "2022–2024",
     note: "Developed new data-driven strategies and solutions for ASML's optical lithography instruments.",
-    tag: "Work experience"
+    tag: "Industry Experiencee"
   }
 ];
 
@@ -142,7 +142,7 @@ const PUBLICATIONS = [
   {
     id: "p2",
     year: "2026",
-    authors: "Ramirez, V., Miguel, Y., Edwards, B.",
+    authors: "Ramirez, V., Miguel, Y., Edwards, B., Akinsanmi, B., Mercado, D.",
     title: "Identifying deformed exoplanets with JWST and Ariel: A target selection metric for phase curve observations",
     journal: "In review",
     link: "",
