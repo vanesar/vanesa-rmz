@@ -1,7 +1,6 @@
 # Vanesa Ramírez — Personal Website
 
-A bilingual (English / Spanish) static portfolio site for Vanesa Ramírez, modeled on the structure of
-yamilamiguel.com, with the teal / navy / cream palette taken from her poster.
+A bilingual (English / Spanish) static portfolio site for Vanesa Ramírez,  with the teal / navy / cream palette taken from her poster.
 
 ## Files
 
