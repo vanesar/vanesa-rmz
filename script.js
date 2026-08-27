@@ -392,4 +392,3 @@ function renderNoMap() {
     '<p>The interactive map could not be loaded (no internet connection to reach map tiles). ' +
     'You can still browse the publications and conferences above.</p></div>';
 }
-
