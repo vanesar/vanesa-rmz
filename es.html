@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanesa Ramírez — Científica planetaria</title>
+  <meta name="description" content="Vanesa Ramírez, doctoranda en el Observatorio de Leiden. Estudia el interior y la composición de los (exo)planetas con métodos bayesianos y aprendizaje automático." />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700;8..60,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand">Vanesa&nbsp;Ramírez</a>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">Sobre mí</a>
+        <a href="#research">Investigación</a>
+        <a href="#publications">Publicaciones</a>
+        <a href="#conferences">Congresos</a>
+        <a href="#map">Mapa Mundial</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="lang-link" href="index.html" aria-label="Switch to English">EN</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Introducción">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Científica planetaria</p>
+        <h1 class="hero-title">Vanesa<br />Ramírez</h1>
+        <p class="hero-role">Doctoranda en Astronomía</p>
+        <p class="hero-links">
+          Observatorio de Leiden · SRON Instituto Neerlandés de Investigación Espacial · Leiden, Países Bajos
+        </p>
+
+        <div class="hero-facts" id="heroFacts"></div>
+
+        <p class="hero-intro">
+          Me mueve la curiosidad por entender cómo se forman los planetas. Mi trabajo combina estadística
+          bayesiana y aprendizaje automático para descubrir de qué están hechos los planetas gigantes
+          (exo)planetarios — estudiando su interior y sus números de Love para comprender su formación y evolución.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-teal" href="#publications">Publicaciones</a>
+          <a class="btn btn-outline" href="#map">Explora mi mapa</a>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <img src="assets/images/picture.jpeg" alt="Vanesa Ramírez en un paisaje desértico" />
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <span class="section-label">Un poco sobre mí</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy una astrónoma colombiana de corazón, y me siento muy afortunada de poder dedicar mis días a
+            preguntarme cosas sobre el Universo. Crecí en Colombia, donde el café, la montaña y la música
+            siempre formaron parte de la vida cotidiana — y donde me enamoré por primera vez de las estrellas.
+          </p>
+          <p>
+            Hice mi licenciatura en Astronomía en la Universidad de Antioquia, en Medellín; estudié el interior
+            de los planetas gigantes durante mi máster en la Universidad de Leiden (Cum Laude), y ahora estoy
+            haciendo el doctorado en el Observatorio de Leiden, bajo la supervisión de la Dra. Yamila Miguel.
+            Mi investigación usa métodos bayesianos y aprendizaje automático para acotar la composición de los
+            planetas gigantes (exo)planetarios y para estudiar sus números de Love.
+          </p>
+          <p>
+            Lejos del telescopio soy una gran amante del café, una senderista entusiasta, cinéfila, y me
+            encantan la poesía y el baile. Creo que la ciencia — como el buen café y la buena música — es
+            mejor cuando se comparte.
+          </p>
+        </div>
+
+        <div class="about-side">
+          <h3 class="side-title">Formación</h3>
+          <ul class="timeline" id="educationList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <span class="section-label">Investigación</span>
+      </div>
+
+      <h2 class="section-title">Revelando el interior de los planetas</h2>
+
+      <p class="lead">
+        Conocemos miles de mundos más allá de nuestro Sistema Solar, y casi ninguno se parece al nuestro.
+        Mi trabajo pregunta de qué están hechos estos planetas: su interior, sus atmósferas, y qué nos dice
+        sobre cómo se forman los sistemas planetarios. Júpiter y Saturno son los laboratorios que podemos
+        estudiar más de cerca y sirven de ancla para todo lo demás.
+      </p>
+
+      <div class="research-blocks">
+        <div class="block">
+          <h4>Estudiando el interior de los planetas</h4>
+          <p>Usando inferencia bayesiana y aprendizaje automático para acotar la composición interna, desde
+          gigantes gaseosos hasta súper-Tierras, y para medir números de Love que revelan cómo se deforma un planeta.</p>
+        </div>
+        <div class="block">
+          <h4>Números de Love y deformación</h4>
+          <p>¿Cómo responde un planeta a la gravedad? Los números de Love codifican esa respuesta — y pueden
+          extraerse de la forma de la curva de luz de un tránsito.</p>
+        </div>
+        <div class="block">
+          <h4>Dando sentido a las misiones</h4>
+          <p>Interpretando las observaciones de JWST, Ariel y la misión Juno para situar a los gigantes de
+          nuestro Sistema Solar en el contexto más amplio de los sistemas exoplanetarios.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-section">Habilidades técnicas</h3>
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Programación</h4>
+          <div id="skillsProgramming"></div>
+        </div>
+        <div class="skill-group">
+          <h4>Software astronómico</h4>
+          <div id="skillsAstronomy"></div>
+        </div>
+        <div class="skill-group">
+          <h4>Idiomas</h4>
+          <div id="skillsLanguages"></div>
+        </div>
+      </div>
+
+      <h3 class="sub-section">Premios y reconocimientos</h3>
+      <ul class="award-list" id="awardList"></ul>
+
+      <h3 class="sub-section">Estudiantes supervisados</h3>
+      <div class="team" id="teamCurrent"></div>
+    </div>
+  </section>
+
+  <section id="publications" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <span class="section-label">Publicaciones revisadas por pares</span>
+      </div>
+
+      <div class="pub-toolbar">
+        <div class="pub-tabs" id="pubTabs">
+          <button class="pub-tab active" data-filter="all">Todas <span id="countAll"></span></button>
+          <button class="pub-tab" data-filter="selected">Seleccionadas <span id="countSel"></span></button>
+        </div>
+        <input type="search" class="pub-search" id="pubSearch" placeholder="Buscar publicaciones…" aria-label="Buscar publicaciones" />
+      </div>
+
+      <ul class="pub-list" id="pubList"></ul>
+    </div>
+  </section>
+
+  <section id="conferences" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">04</span>
+        <span class="section-label">Congresos y presentaciones</span>
+      </div>
+
+      <div class="conf-grid">
+        <div class="conf-col">
+          <h3 class="conf-head">Charlas</h3>
+          <ul class="conf-list" id="talkList"></ul>
+        </div>
+        <div class="conf-col">
+          <h3 class="conf-head">Pósters</h3>
+          <ul class="conf-list" id="posterList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">05</span>
+        <span class="section-label">Mi recorrido por el mundo</span>
+      </div>
+
+      <p class="lead">
+        Un recorrido interactivo por mis estudios, estancias de investigación y los congresos donde he
+        presentado mi trabajo. Haz clic en una tarjeta para volar hasta su ubicación.
+      </p>
+
+      <div class="map-filters" id="mapFilters">
+        <button class="map-filter active" data-cat="all">Todas</button>
+        <button class="map-filter filter-degree" data-cat="degree">🎓 Estudios (Grado / Máster / PhD)</button>
+        <button class="map-filter filter-school" data-cat="school">🌏 Escuelas y estancias</button>
+        <button class="map-filter filter-conf" data-cat="conf">🎤 Congresos</button>
+        <button class="map-filter filter-pub" data-cat="pub">📄 Publicaciones</button>
+      </div>
+
+      <div class="map-layout">
+        <ul class="map-cards" id="mapCards" role="list" aria-label="Ubicaciones del recorrido"></ul>
+        <div id="worldMap" class="map-container" role="region" aria-label="Mapa mundial interactivo"></div>
+      </div>
+      <ul class="map-legend" id="mapLegend"></ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-num">06</span>
+        <span class="section-label">Contacto</span>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h4 class="contact-title">Correo</h4>
+          <a class="contact-link" id="emailLink" href="mailto:ramirez@strw.leidenuniv.nl">ramirez@strw.leidenuniv.nl</a>
+        </div>
+        <div class="contact-block">
+          <h4 class="contact-title">Teléfono</h4>
+          <a class="contact-link" id="phoneLink" href="tel:+31647074243">+31 6 47 07 4243</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Vanesa Ramírez</p>
+      <p class="footer-meta" id="footerMeta">Última actualización: agosto 2026 · © 2026 Vanesa Ramírez</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
