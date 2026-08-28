@@ -30,6 +30,10 @@ function esc(str) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
+function yearNum(str) {
+  const m = String(str).match(/\d{4}/);
+  return m ? parseInt(m[0], 10) : 0;
+}
 
 /* ---------- HERO ---------- */
 function renderHeroFacts() {
@@ -153,7 +157,7 @@ function setupPublicationsTabs() {
 function renderConferences() {
   const talks = document.getElementById("talkList");
   const posters = document.getElementById("posterList");
-  CONFERENCES.forEach(function (c) {
+  CONFERENCES.slice().sort(function (a, b) { return yearNum(b.years) - yearNum(a.years); }).forEach(function (c) {
     const li = el("li", null,
       '<span class="conf-years">' + esc(c.years) + "</span>" +
       '<span class="conf-name">' + esc(c.title) + "</span>" +
@@ -217,7 +221,8 @@ function buildMapData() {
       place: s.institution + (s.place ? " · " + s.place : ""),
       years: s.years,
       note: s.note,
-      lat: s.lat, lng: s.lng
+      lat: s.lat, lng: s.lng,
+      link: s.link
     });
   });
   CONFERENCES.forEach(function (c) {
@@ -243,6 +248,7 @@ function buildMapData() {
       link: p.link
     });
   });
+  items.sort(function (a, b) { return yearNum(b.years) - yearNum(a.years); });
   return items;
 }
 
@@ -264,7 +270,8 @@ function popupFor(item) {
     '<div class="pop-meta">' + esc(item.place) + "</div>" +
     '<div class="pop-note">' + esc(item.note) + "</div>";
   if (item.link) {
-    html += '<a href="' + esc(item.link) + '" target="_blank" rel="noopener">Open publication</a>';
+    const label = item.cat === "pub" ? "Open publication" : "Open link";
+    html += '<a href="' + esc(item.link) + '" target="_blank" rel="noopener">' + label + "</a>";
   }
   return html;
 }

@@ -41,7 +41,7 @@ const STUDIES = [
     lat: 52.155,
     lng: 4.483,
     years: "2024–Present",
-    note: "Thesis: Probing the Interior of Giant Planets. Supervisor: Dr. Yamila Miguel. Using Bayesian methods and machine learning to constrain composition of giant (exo)planets and probe Love numbers."
+    note: "Thesis: Probing the Interior of Giant Planets. Supervisor: Dr. Yamila Miguel. Using Bayesian methods and machine learning to constrain composition of giant (exo)planets and probe their tidal deformation."
   },
   {
     id: "msc",
@@ -105,24 +105,129 @@ const STUDIES = [
     years: "2022–2024",
     note: "Developed new data-driven strategies and solutions for ASML's optical lithography instruments.",
     tag: "Industry Work Experience"
+  },
+  {
+    id: "leshouches",
+    type: "school",
+    title: "Planetary Atmospheres and Interiors: A Two-Way Connection",
+    institution: "Les Houches School of Physics",
+    place: "Les Houches, France",
+    country: "France",
+    lat: 45.9015,
+    lng: 6.7454,
+    link: "https://planet-atmo-int.sciencesconf.org",
+    years: "2026",
+    note: "Summer school",
+    tag: "School"
+  },
+  {
+    id: "exoslam",
+    type: "school",
+    title: "ExoSLAM — Machine Learning for planetary interiors",
+    institution: "ExoSLAM",
+    place: "Montreal, Canada",
+    country: "Canada",
+    lat: 45.5017,
+    lng: -73.5673,
+    years: "2025",
+    note: "Machine learning school for planetary interiors",
+    tag: "School"
+  },
+  {
+    id: "byurakan",
+    type: "school",
+    title: "7th Byurakan International Summer School (7BISS) for Young Astronomers",
+    institution: "Byurakan Astrophysical Observatory",
+    place: "Online",
+    country: "",
+    lat: null,
+    lng: null,
+    years: "2020",
+    note: "Online summer school",
+    tag: "School"
+  },
+  {
+    id: "leaps",
+    type: "school",
+    title: "Leiden/ESA Astrophysics Program for Summer students (LEAPS)",
+    institution: "Leiden University",
+    place: "Leiden, The Netherlands",
+    country: "Netherlands",
+    lat: 52.155,
+    lng: 4.483,
+    years: "2019",
+    note: "Summer research program",
+    tag: "School"
+  },
+  {
+    id: "dunlap",
+    type: "school",
+    title: "Dunlap Institute Summer School: Introduction to Astronomical Instrumentation",
+    institution: "Dunlap Institute, University of Toronto",
+    place: "Toronto, Canada",
+    country: "Canada",
+    lat: 43.6532,
+    lng: -79.3832,
+    years: "2018",
+    note: "Astronomical instrumentation summer school",
+    tag: "School"
+  },
+  {
+    id: "tnt",
+    type: "school",
+    title: "3er Taller de Radioastrofísica Verano TNT",
+    institution: "INAOE",
+    place: "Tonantzintla, México",
+    country: "Mexico",
+    lat: 19.0359,
+    lng: -98.3175,
+    years: "2018",
+    note: "Radioastrophysics summer workshop",
+    tag: "School"
+  },
+  {
+    id: "spm",
+    type: "school",
+    title: "XXVI Verano Científico en el Observatorio Astronómico Nacional San Pedro Mártir",
+    institution: "OAN San Pedro Mártir",
+    place: "Ensenada, México",
+    country: "Mexico",
+    lat: 31.0439,
+    lng: -115.4645,
+    years: "2017",
+    note: "Summer research program",
+    tag: "School"
+  },
+  {
+    id: "esaobela",
+    type: "school",
+    title: "Escuela de Astronomía Observacional para Estudiantes Latinoamericanos (ESAOBELA) 2017",
+    institution: "Universidad Nacional Autónoma de México",
+    place: "Tonantzintla, México",
+    country: "Mexico",
+    lat: 19.0359,
+    lng: -98.3175,
+    years: "2017",
+    note: "Observational astronomy school",
+    tag: "School"
   }
 ];
 
 /* --------------------- Conferences, talks & posters --------------------------------- */
 const CONFERENCES = [
-  { id: "c1", kind: "talk", title: "Layers of Understanding", place: "", country: "", lat: null, lng: null, years: "2026", note: "Talk" },
-  { id: "c2", kind: "talk", title: "Ariel Open Conference", place: "", country: "", lat: null, lng: null, years: "2026", note: "Talk" },
-  { id: "c3", kind: "talk", title: "EPSC — European Planetary Science Congress", place: "", country: "", lat: null, lng: null, years: "2026", note: "Talk" },
+  { id: "c1", kind: "talk", title: "Layers of Understanding", place: "Heidelberg", country: "Germany", lat: 49.3988, lng: 8.6724, years: "2026", note: "Talk" },
+  { id: "c2", kind: "talk", title: "Ariel Open Conference", place: "Didcot", country: "United Kingdom", lat: 51.6094, lng: -1.2422, years: "2026", note: "Talk" },
+  { id: "c3", kind: "talk", title: "EPSC — European Planetary Science Congress", place: "Helsinki", country: "Finland", lat: 60.1699, lng: 24.9384, years: "2026", note: "Talk" },
   { id: "c4", kind: "talk", title: "Ariel Consortium Meeting", place: "Leiden", country: "Netherlands", lat: 52.155, lng: 4.483, years: "2025", note: "Talk · Local Organizer" },
+  { id: "c6", kind: "talk", title: "ExoSLAM — Machine Learning for planetary interiors", place: "Montreal", country: "Canada", lat: 45.5017, lng: -73.5673, years: "2025", note: "Invited talk (lecturer)" },
   { id: "c5", kind: "talk", title: "COSPAR", place: "Busan", country: "South Korea", lat: 35.1796, lng: 129.0756, years: "2024", note: "Talk" },
-  { id: "c6", kind: "talk", title: "ExoSLAM — Machine Learning for planetary interiors", place: "Montreal", country: "Canada", lat: 45.5017, lng: -73.5673, years: "2025", note: "Invited talk" },
   { id: "c7", kind: "poster", title: "Exoclimes", place: "", country: "", lat: null, lng: null, years: "2025", note: "Poster" },
-  { id: "c8", kind: "poster", title: "Exoplanets V", place: "", country: "", lat: null, lng: null, years: "2024", note: "Poster" },
-  { id: "c9", kind: "poster", title: "Diversis Mundi", place: "", country: "", lat: null, lng: null, years: "2018", note: "Poster" },
-  { id: "c10", kind: "poster", title: "IX Taller de Ciencias Planetarias", place: "", country: "", lat: null, lng: null, years: "2018", note: "Poster" },
-  { id: "c11", kind: "poster", title: "COCOA", place: "", country: "", lat: null, lng: null, years: "2017", note: "Poster" },
-  { id: "c12", kind: "poster", title: "LARIM", place: "", country: "", lat: null, lng: null, years: "2016", note: "Poster" },
-  { id: "c13", kind: "poster", title: "NAC conference", place: "", country: "", lat: null, lng: null, years: "2024", note: "Best Poster prize" }
+  { id: "c8", kind: "poster", title: "Exoplanets V", place: "Montreal", country: "Canada", lat: 45.5017, lng: -73.5673, years: "2024", note: "Poster" },
+  { id: "c9", kind: "poster", title: "Diversis Mundi", place: "Santiago", country: "Chile", lat: -33.4489, lng: -70.6693, years: "2018", note: "Poster" },
+  { id: "c10", kind: "poster", title: "IX Taller de Ciencias Planetarias", place: "La Plata", country: "Argentina", lat: -34.9215, lng: -57.9545, years: "2018", note: "Poster" },
+  { id: "c11", kind: "poster", title: "COCOA", place: "Pereira", country: "Colombia", lat: 4.8133, lng: -75.6961, years: "2017", note: "Poster" },
+  { id: "c12", kind: "poster", title: "LARIM", place: "Cartagena", country: "Colombia", lat: 10.391, lng: -75.4794, years: "2016", note: "Poster" },
+  { id: "c13", kind: "poster", title: "NAC conference", place: "Egmond aan Zee", country: "Netherlands", lat: 52.6191, lng: 4.6265, years: "2024", note: "Best Poster prize" }
 ];
 
 /* --------------------- Publications ------------------------------------------------ */
