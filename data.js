@@ -222,7 +222,7 @@ const CONFERENCES = [
   { id: "c6", kind: "talk", title: "ExoSLAM — Machine Learning for planetary interiors", place: "Montreal", country: "Canada", lat: 45.5017, lng: -73.5673, years: "2025", note: "Invited talk (lecturer)" },
   { id: "c5", kind: "talk", title: "COSPAR", place: "Busan", country: "South Korea", lat: 35.1796, lng: 129.0756, years: "2024", note: "Talk" },
   { id: "c7", kind: "poster", title: "Exoclimes", place: "", country: "", lat: null, lng: null, years: "2025", note: "Poster" },
-  { id: "c8", kind: "poster", title: "Exoplanets V", place: "Montreal", country: "Canada", lat: 45.5017, lng: -73.5673, years: "2024", note: "Poster" },
+  { id: "c8", kind: "poster", title: "Exoplanets V", place: "Leiden", country: "Netherlands", lat: 52.155, lng: 4.483, years: "2024", note: "Poster" },
   { id: "c9", kind: "poster", title: "Diversis Mundi", place: "Santiago", country: "Chile", lat: -33.4489, lng: -70.6693, years: "2018", note: "Poster" },
   { id: "c10", kind: "poster", title: "IX Taller de Ciencias Planetarias", place: "La Plata", country: "Argentina", lat: -34.9215, lng: -57.9545, years: "2018", note: "Poster" },
   { id: "c11", kind: "poster", title: "COCOA", place: "Pereira", country: "Colombia", lat: 4.8133, lng: -75.6961, years: "2017", note: "Poster" },
